@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/iamshadmirza/node-webserver#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "hbs": "^4.0.3"
   }
 }
