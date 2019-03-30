@@ -17,3 +17,10 @@ it('should add two number', () => {
 it('should include number in an array', () => {
     expect([2, 4, 6]).toInclude(4);
 })
+
+it('should add two number async', (done) => {
+    utils.asyncAdd(11, 11, (sum) => {
+        expect(sum).toBe(22);
+        done();
+    });
+});
