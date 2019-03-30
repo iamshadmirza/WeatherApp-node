@@ -18,6 +18,13 @@ app.get('/', (req, res) => {
     res.send('Hello Express!!');
 });
 
+app.get('/new', (req, res) => {
+    res.status(404).send({
+        error: 'Page not found',
+        name: 'express web server'
+    });
+});
+
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About Page',
