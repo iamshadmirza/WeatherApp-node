@@ -1,26 +1,28 @@
 const utils = require('./utils');
 const expect = require('expect');
 
-it('should add two number', () => {
-    var res = utils.add(33, 11);
-    expect(res).toBe(44);
-    // if (res !== 44) {
-    //     throw new Error(`Expected 44 but got ${res}`);
-    // }
-});
+describe('Utils', () => {
+    it('should add two number', () => {
+        var res = utils.add(33, 11);
+        expect(res).toBe(44);
+        // if (res !== 44) {
+        //     throw new Error(`Expected 44 but got ${res}`);
+        // }
+    });
 
-it('should add two number', () => {
-    var res = utils.add(11, 11);
-    expect(res).toBe(22);
-});
+    it('should add two number', () => {
+        var res = utils.add(11, 11);
+        expect(res).toBe(22);
+    });
 
-it('should include number in an array', () => {
-    expect([2, 4, 6]).toInclude(4);
-})
+    it('should include number in an array', () => {
+        expect([2, 4, 6]).toInclude(4);
+    })
 
-it('should add two number async', (done) => {
-    utils.asyncAdd(11, 11, (sum) => {
-        expect(sum).toBe(22);
-        done();
+    it('should add two number async', (done) => {
+        utils.asyncAdd(11, 11, (sum) => {
+            expect(sum).toBe(22);
+            done();
+        });
     });
 });
