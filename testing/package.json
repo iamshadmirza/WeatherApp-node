@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "expect": "^23.6.0",
     "mocha": "^6.0.2"
   }
 }
