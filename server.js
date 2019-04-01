@@ -26,7 +26,7 @@ app.get('/new', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.render('about.hbs', {
+    res.status(200).render('about.hbs', {
         pageTitle: 'About Page',
         welcomeMessage: 'Welcome to about us page'
     });

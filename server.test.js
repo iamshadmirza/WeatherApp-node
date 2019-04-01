@@ -22,4 +22,17 @@ describe('Server', () => {
             })
             .end(done);
     });
+
+    it('should include success msg', (done) => {
+        request(app)
+            .get('/about')
+            .expect(200)
+            .expect((res) => {
+                expect(res.body).toMatchObject({
+                    pageTitle: 'About Page',
+                    welcomeMessage: 'Welcome to about us page'
+                });
+            })
+            .end(done);
+    });
 });
