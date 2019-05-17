@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/iamshadmirza/node-webserver.git"
   },
-  "author": "",
+  "author": "Mohd Shad Mirza",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/iamshadmirza/node-webserver/issues"
