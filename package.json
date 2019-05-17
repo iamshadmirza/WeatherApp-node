@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha **/*.test.js",
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "expect": "^24.5.0",
     "mocha": "^6.1.4",
+    "nodemon": "^1.19.0",
     "supertest": "^4.0.2"
   }
 }
