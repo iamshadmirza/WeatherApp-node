@@ -21,6 +21,10 @@ footer {
     padding: 16px 0;
 }
 
+a {
+    color: #888888;
+}
+
 header {
     margin-top: 16px;
     margin-bottom: 48px;
